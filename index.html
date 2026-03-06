@@ -96,7 +96,7 @@
       </div>
       <div class="badges">
         <a class="badge" href="#" target="_blank" rel="noopener">📄 Paper</a>
-        <a class="badge" href="https://github.com/caixiaojie423/TCPVG" target="_blank" rel="noopener">💻 Code</a>
+        <a class="badge" href="https://github.com/caixiaojie423/TCPVG.github.io" target="_blank" rel="noopener">💻 Code</a>
         <a class="badge" href="#comparison">📊 Comparison</a>
       </div>
       <div class="hero">
@@ -111,8 +111,12 @@
       <h2>Abstract</h2>
       <div class="center">
         <p>
-          Recent advances in diffusion models have enabled post-treatment video generation (PVG), offering richer and more intuitive previews of orthodontic outcomes compared to static visualization. However, paired pre-treatment and post-treatment data are extremely difficult to collect, and existing methods rely on 3D-to-2D contour projections for surrogate supervision. This setup introduces a pronounced domain gap between the 3D-derived contours used for training and the 2D segmentations used during inference, leading to degraded generalization. Moreover, speech-driven mouth motion exhibits rapid, highly non-rigid deformation, making temporal alignment challenging and often resulting in flickering or geometric drift.
-To address these challenges, we propose the Temporally Consistent Post-orthodontic Video Generation (TCPVG) framework—a diffusion-based approach that synthesizes temporally stable and photorealistic post-treatment videos from speech inputs. TCPVG incorporates a Dual-Encoder Frequency Fusion Network that adaptively bridges the contour-style domain gap via multi-scale frequency fusion, and a Flow-guided Temporal Attention mechanism that leverages dense optical flow and step-wise adaptive fusion to enhance motion coherence under fast articulations. Extensive experiments demonstrate that TCPVG achieves superior perceptual fidelity and temporal consistency over state-of-the-art baselines, establishing a new benchmark for realistic, speech-driven orthodontic video generation.
+          Recent advances in diffusion models have enabled post-treatment video generation to offer rich and intuitive previews of orthodontic outcomes.
+          However, existing methods rely on 3D-2D contour projections for surrogate supervision, which introduces a domain gap between the 3D-derived and 2D segmentation contours.
+          Moreover, mouth motion in speaking videos is rapid and highly non-rigid, resulting in flickering or geometric drift in temporal alignment.
+          To address these challenges, we propose Temporally Consistent Post-orthodontic Video Generation (TCPVG), in which a Dual-Encoder Frequency Fusion Network (DEFF-Net) adaptively bridges the contour-style domain gap via multi-scale frequency fusion, and a Flow-guided Temporal Attention (FGTA) mechanism leverages dense optical flow and step-wise adaptive fusion to enhance motion coherence under fast articulations.
+          Extensive experiments conducted on two natural speaking video datasets from different demographics demonstrate that TCPVG outperforms existing state-of-the-art baseline methods in both perceptual fidelity and temporal consistency.
+          Specifically, compared to baselines and other mainstream video editing methods, our method significantly reduces the Fréchet Video Distance by over 37% and the Fréchet Inception Distance by over 39%, establishing a new benchmark for realistic orthodontic outcome visualization in speaking videos.
         </p>
       </div>
     </section>
