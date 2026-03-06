@@ -18,6 +18,7 @@
   h1{font-size:clamp(26px,4vw,36px);margin:.2em 0 .4em}
   .authors{margin:.4em 0;color:var(--muted)}
   .authors a{color:inherit}
+  .author-names{font-weight:700;color:var(--text)}
   .venue{margin:.3em 0 1em;font-weight:600;color:#666}
   .badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0 16px}
   .badge{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid var(--chipbd);font-weight:600}
@@ -86,8 +87,12 @@
     <header>
       <h1>TCPVG: Temporally Consistent Post-orthodontic Video Generation via Frequency and Flow Fusion</h1>
       <div class="authors">
-        <a href="#">Wenjie Cai</a>, <a href="#">Yan Tian</a><br>
-        <span class="venue"></span>
+        <span class="author-names">Wenjie Cai<sup>a,b</sup>, Jiaheng Xu<sup>a</sup>, Xuran Zhao<sup>a,c</sup>, Tao Yang<sup>a,c</sup>, Xijuan Liu<sup>a,c,*</sup>, Yan Tian<sup>a,b,c,*</sup></span><br>
+        <span style="display:inline-block;margin-top:6px;font-size:14px;line-height:1.5;">
+          <span><sup>a</sup> School of Computer Science and Technology, Zhejiang Gongshang University, 310018, Hangzhou, China</span><br>
+          <span><sup>b</sup> Shining3D Tech Co., Ltd., 311258, Hangzhou, China</span><br>
+          <span><sup>c</sup> Zhejiang Key Laboratory of Big Data and Future E-Commerce Technology, 310018, Hangzhou, China</span>
+        </span>
       </div>
       <div class="badges">
         <a class="badge" href="#" target="_blank" rel="noopener">📄 Paper</a>
@@ -125,6 +130,10 @@ To address these challenges, we propose the Temporally Consistent Post-orthodont
     <section id="comparison">
       <h2>Comparison with Other Methods</h2>
       <div class="center">
+        <p style="text-align:center;color:var(--muted);margin-bottom:20px">
+          我们将 TCPVG 与其他方法进行对比，展示不同方法的生成效果。
+        </p>
+        
         <!-- 对比示例 1 -->
         <div class="comparison-group">
           <h3 style="font-size:18px;margin:24px 0 12px;text-align:center">Case 1</h3>
